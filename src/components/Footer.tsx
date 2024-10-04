@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="max-container">
+    <footer className="max-container">
       <div className="border-grey_15 sm:border-b-2">
         <div className="relative my-7 flex items-center justify-between max-sm:flex-col sm:my-10 sm:py-4 xl:my-12">
           <Image
@@ -15,7 +15,7 @@ const Footer = () => {
             height={60}
             className="h-12 w-36 max-sm:mb-7 sm:h-14 sm:w-44"
           />
-          <ul className="right-1/2 flex flex-wrap justify-center gap-7 border-t-2 border-grey_15 max-2xl:hidden max-sm:flex max-sm:px-4 max-sm:py-7 sm:absolute sm:translate-x-1/2">
+          <ul className="right-1/2 flex flex-wrap justify-center gap-7 border-grey_15 max-2xl:hidden max-sm:flex max-sm:border-t-2 max-sm:px-4 max-sm:py-7 sm:absolute sm:translate-x-1/2">
             {footerLinks.map((link) => (
               <li key={link.label} className={`font-medium sm:text-lg`}>
                 <Link href={link.href}>{link.label}</Link>
@@ -50,7 +50,7 @@ const Footer = () => {
           {contacts.map((contact) => (
             <li
               key={contact.label}
-              className="flex w-full items-center justify-center gap-2 border-b-2 border-grey_15 pb-3"
+              className="flex items-center justify-center gap-2 border-b-2 border-grey_15 pb-3 max-sm:w-full"
             >
               <Image
                 src={contact.iconUrl}
@@ -70,7 +70,7 @@ const Footer = () => {
           © 2023 SquareUp. All rights reserved.
         </p>
       </div>
-    </div>
+    </footer>
   );
 };
 

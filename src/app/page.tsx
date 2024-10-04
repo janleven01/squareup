@@ -27,9 +27,6 @@ export default function Home() {
       <section>
         <ThankYou />
       </section>
-      <section>
-        <Footer />
-      </section>
     </main>
   );
 }

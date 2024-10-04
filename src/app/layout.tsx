@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Barlow } from "next/font/google";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 const barlow = Barlow({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={`${barlow.className} antialiased`}>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

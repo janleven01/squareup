@@ -18,7 +18,7 @@ const NavBar = () => {
             alt="SquareUp Logo"
             width={180}
             height={60}
-            className="h-10 w-[119px] sm:h-10 sm:w-[119px] xl:h-[60px] xl:w-44"
+            className="h-10 w-[119px] sm:h-10 xl:h-[60px] xl:w-44"
           />
         </Link>
         <ul className="hidden lg:flex">
