@@ -57,7 +57,7 @@ const FAQ = () => {
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value={`item-${index + 1}`}>
                   <AccordionTrigger onClick={() => handleClicked(index)}>
-                    <div className="flex items-center gap-5">
+                    <div className="items-center gap-5 max-md:flex">
                       <div className="relative block size-14 md:hidden">
                         <Image
                           src="/images/number-container.svg"
