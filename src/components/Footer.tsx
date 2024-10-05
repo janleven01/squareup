@@ -14,7 +14,7 @@ const Footer = () => {
               alt="squareup logo"
               width={178}
               height={60}
-              className="h-12 w-36 max-sm:mb-7 sm:h-14 sm:w-44"
+              className="h-12 w-36 object-cover max-sm:mb-7 sm:h-14 sm:w-44"
             />
             <ul className="right-1/2 flex flex-wrap justify-center gap-7 border-grey_15 max-2xl:hidden max-sm:flex max-sm:border-t-2 max-sm:px-4 max-sm:py-7 sm:absolute sm:translate-x-1/2">
               {footerLinks.map((link) => (

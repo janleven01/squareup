@@ -36,7 +36,7 @@ const SectionHeader = (props: SectionHeaderProps) => {
         alt={title}
         width={1596}
         height={336}
-        className="absolute -z-10 h-full w-full"
+        className="absolute -z-10 h-full w-full object-cover"
       />
     </div>
   );
