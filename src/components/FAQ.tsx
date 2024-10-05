@@ -104,14 +104,9 @@ const FAQ = () => {
                   className={`absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2 text-2xl xl:text-3xl ${`text-left ${isClicked[index + 4] && "text-green_50"}`}`}
                 >{`0${index + 5}`}</p>
               </div>
-              <Accordion
-                type="single"
-                collapsible
-                onClick={() => handleClicked(index + 4)}
-                className="w-full"
-              >
+              <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value={`item-${index + 5}`}>
-                  <AccordionTrigger>
+                  <AccordionTrigger onClick={() => handleClicked(index + 4)}>
                     <p
                       className={`text-left text-lg font-medium xl:text-xl ${isClicked[index + 4] && "text-green_70"}`}
                     >
