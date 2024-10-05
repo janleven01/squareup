@@ -21,7 +21,7 @@ export const footerLinks = [
   { href: "/process", label: "Process" },
   { href: "/about", label: "About" },
   { href: "/careers", label: "Careers" },
-  { href: "/contats", label: "Contacts" },
+  { href: "/contacts", label: "Contacts" },
 ];
 
 export const trustedBy = [
