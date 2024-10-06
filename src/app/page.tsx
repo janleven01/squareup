@@ -1,6 +1,5 @@
 import FAQ from "@/components/FAQ";
 import Feedback from "@/components/Feedback";
-import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import ThankYou from "@/components/ThankYou";
