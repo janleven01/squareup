@@ -33,11 +33,13 @@ const NavBar = () => {
         </Link>
         <ul className="hidden md:flex">
           {navLinks.map((item) => (
-            <li
-              key={item.label}
-              className={`rounded-lg px-3.5 py-[14px] font-medium text-grey_90 hover:text-grey_60 sm:py-3 sm:text-sm lg:px-[22px] xl:px-7 xl:text-lg ${path === item.href && "bg-grey_15 font-semibold text-white"}`}
-            >
-              <Link href={item.href}>{item.label}</Link>
+            <li key={item.label}>
+              <Link
+                href={item.href}
+                className={`rounded-lg px-3.5 py-[14px] font-medium text-grey_90 hover:text-grey_60 sm:py-3 sm:text-sm lg:px-[22px] xl:px-7 xl:text-lg ${path === item.href && "bg-grey_15 font-semibold text-white"}`}
+              >
+                {item.label}
+              </Link>
             </li>
           ))}
         </ul>
@@ -68,13 +70,18 @@ const NavBar = () => {
                 </Link>
               </SheetTitle>
               <SheetDescription className="flex flex-col items-center">
-                <ul className="mt-5 flex w-full flex-col items-center">
+                <ul className="mt-5 w-full">
                   {navLinks.map((item) => (
                     <li
                       key={item.label}
-                      className={`w-3/4 rounded-lg px-3.5 py-3 text-center text-sm font-medium text-grey_90 ${path === item.href ? "bg-grey_15 font-semibold text-white" : "hover:text-grey_60"}`}
+                      className="flex items-center justify-center"
                     >
-                      <Link href={item.href}>{item.label}</Link>
+                      <Link
+                        href={item.href}
+                        className={`w-3/4 rounded-lg px-3.5 py-3 text-center text-sm font-medium text-grey_90 ${path === item.href ? "bg-grey_15 font-semibold text-white" : "hover:text-grey_60"}`}
+                      >
+                        {item.label}
+                      </Link>
                     </li>
                   ))}
                 </ul>
